@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-title>
+      Perfil
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="empty bg-tertiary"></div>
+  <div class="ion-text-center image-over-div">
+    <img src="https://pm1.narvii.com/7650/cdfcfc449fa33771199a423fa14734fbdf4feacer1-256-256v2_128.jpg" alt="" class="image-round border-white">
+  </div>
+
+  <div class="ion-text-center">
+    <h1>Você</h1>
+    <p class="text-profile">
+      Descrição resumida do Perfil. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <ion-button color="tertiary" id="open-toast">Editar</ion-button>
+    <ion-toast color="danger" trigger="open-toast" message="Ocorreu um erro ao Editar" [duration]="3000" icon="warning"></ion-toast>
+  </div>
+
+  <div class="ion-padding">
+    <p class="text-profile">
+      Descrição mais detalhada do Perfil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis itaque natus illum deserunt eos ex voluptatibus,
+      tempore veniam quaerat eligendi
+    </p>
+  </div>
+
+</ion-content>

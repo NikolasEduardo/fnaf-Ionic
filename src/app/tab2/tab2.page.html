@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-title>
+      Sobre FNAF
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container" align="center">
+    <iframe width="100%" height="250px" src="https://www.youtube.com/embed/Z0IlRsW3teI?si=iWWigJNbp70QIruI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br><br>
+    <ion-button color="tertiary" href="https://www.youtube.com/channel/UC-yA8YhrAgpFp4aVHRaNyMA" target="_blank">VISITAR CANAL DO "CORE"</ion-button><br><br>
+
+    <ion-button color="tertiary" id="toast-docs">SOBRE O DOCUMENTÁRIO</ion-button>
+    <ion-toast
+      trigger="toast-docs"
+      [duration]="100000"
+      message="O documentário do Core é um vídeo muito bem feito e completo sobre a história de FNAF, que ele postou no seu canal do YouTube. Ele explicou tudo sobre os jogos, os personagens, os mistérios e as curiosidades dessa franquia de terror. Ele contou com a ajuda de vários colaboradores e também com a participação especial de Pinky Pills e Leon Riskin. O documentário dele foi um sucesso e recebeu muitos elogios dos fãs de FNAF."
+      class="custom-toast"
+      [buttons]="toastButtons"
+    ></ion-toast><br>
+
+    <ion-button color="tertiary" id="toast-core">SOBRE O CANAL "CORE"</ion-button>
+    <ion-toast
+      trigger="toast-core"
+      [duration]="100000"
+      message="O canal do Core no YouTube é um canal de entretenimento que se dedica principalmente a jogos de terror, especialmente a franquia FNAF. O canal foi criado em 2013 e possui mais de 2,6 milhões de inscritos e mais de 4 mil vídeos. O youtuber Core é conhecido por seu humor, sua voz e sua paixão pelos jogos que ele apresenta. Ele também faz vídeos sobre outros temas, como memes, filmes, livros e curiosidades. O canal do Core já foi alvo de polêmica por ter sido citado em um documentário sobre o massacre de Realengo, que ocorreu em 2011 no Rio de Janeiro. O documentário sugeriu que o conteúdo do canal e do jogo FNAF poderiam influenciar negativamente as crianças e estimular a violência. Core se defendeu nas redes sociais, dizendo que seu canal não é para crianças e que não tem nenhuma relação com o crime."
+      class="custom-toast"
+      [buttons]="toastButtons"
+    ></ion-toast><br>
+  </div>
+</ion-content>
